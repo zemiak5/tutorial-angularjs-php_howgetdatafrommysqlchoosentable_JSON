@@ -1,6 +1,7 @@
 # tutorial-angularjs-php_howgetdatafrommysqlchoosentable_JSON
 AngularJS + PHP - get data from chosen table in database
-
+<br>
+<a target="_blank" href="http://www.tomdev.eu/tutorials/tutorial-angularjs-php_howgetdatafrommysqlchoosentable_JSON/">DEMO</a>
 <h1>How to get data from table in MySQL database to table in HTML format</h1>
 <h2>AngularJS + PHP + MySQL</h2>
 <hr>
@@ -29,16 +30,16 @@ AngularJS + PHP - get data from chosen table in database
 <p>2. - mysqlconnection.php - Create this file which holds variables used to connect to MySQL database. Connection details.</p>
 
 
-<p>3. a-controllers.js - AngularJS file initialize app and controller. Controller is responsible for sending name of requested table in JSON format to next PHP file 
+<p>3. - a-controllers.js - AngularJS file initialize app and controller. Controller is responsible for sending name of requested table in JSON format to next PHP file 
     and receive data from requested table this is ensured using next PHP file which will return data in JSON format.</p>
 
 
-<p>4. process.php - Server page which is not standart HTML file. This PHP handle JSON data sent from previous file. Connect to database and get requested data.
+<p>4. - process.php - Server page which is not standart HTML file. This PHP handle JSON data sent from previous file. Connect to database and get requested data.
     Prepare table data to JSON format and return back to AngularJS controller which is defined in previous file.
 </p>
 
 
-<p>5. SEE BELOW OUTPUT IMAGE - example output is below</p>
+<p>5. - tablesindatabase.php - Server page which get names of all tables in database and return it in JSON format</p>
 
 
 
