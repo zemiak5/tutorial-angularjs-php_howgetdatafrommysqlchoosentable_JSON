@@ -15,11 +15,12 @@
 
     <h3>CHOOSE TABLE AND VIEW CONTENT</h3>
     <h5>/ wait a second till tables are loaded from database. I am using slow but free MySQL database for tutorials. / </h5>
-    <form name="vyberTabulkyForm" >
-        <select ng-model="form.menotabulecky" >
+    <form name="vyberTabulkyForm" > 
+        <select ng-model="form.menotabulecky" > <!-- angularJS model store table name -->
+            <!-- iterate through JSON contains names of tables returned by tablesindatabase.php -->
             <option ng-repeat="nazovtabulky in tablesnames" value="{{nazovtabulky.tablename}}">{{nazovtabulky.tablename}}</option>
         </select>
-        <button type="submit" ng-click="submitformik()" class="btn">Submit </button>
+        <button type="submit" ng-click="submitformik()" class="btn">Submit </button><!-- call angularJS function which request data from selected table -->
     </form>
     
     <table class="table table-bordered table-responsive">
